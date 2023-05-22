@@ -43,7 +43,7 @@ function App() {
                         onSelectGenre={(genre) =>
                             setGameQuery({ ...gameQuery, genre })
                         }
-                        seletedGenre={gameQuery.genre}
+                        selectedGenre={gameQuery.genre}
                     />
                 </GridItem>
             </Show>

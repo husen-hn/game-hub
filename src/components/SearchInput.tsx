@@ -6,7 +6,7 @@ interface Props {
     onSearch: (searchText: string) => void
 }
 
-function SearhcInput({ onSearch }: Props) {
+const SearchInput = ({ onSearch }: Props) => {
     const ref = useRef<HTMLInputElement>(null)
 
     return (
@@ -22,10 +22,12 @@ function SearhcInput({ onSearch }: Props) {
                     ref={ref}
                     borderRadius={20}
                     placeholder="Search games..."
-                ></Input>
+                    width="100%"
+                    variant="filled"
+                />
             </InputGroup>
         </form>
     )
 }
 
-export default SearhcInput
+export default SearchInput
